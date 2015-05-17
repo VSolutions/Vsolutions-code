@@ -1,0 +1,1117 @@
+
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Vsolutions | Home</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+
+
+
+<style>
+            @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input[type='checkbox'] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body .swanky {
+ position: absolute;
+    left: -50px;
+}
+
+body {
+  height: 100vh;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  background-color: silver;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+}
+body .swanky {
+  -webkit-perspective: 600px;
+          perspective: 600px;
+  width: 700px;
+  position: absolute;
+  margin: auto;
+  height: 360px;
+}
+body .swanky_title {
+  float: right;
+  text-align: left;
+  width: 400px;
+  color: white;
+  position: relative;
+  top: 70px;
+}
+body .swanky_title__social a {
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  margin-right: 15px;
+  text-decoration: none;
+  padding: 0px 0px 5px 0px;
+  height: 40px;
+  border: 2px solid white;
+  float: left;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+body .swanky_title__social a .slide {
+  height: 45px;
+  width: 100px;
+  float: left;
+  position: absolute;
+  -webkit-transform: skew(20deg);
+      -ms-transform: skew(20deg);
+          transform: skew(20deg);
+  left: -120px;
+  -webkit-transition-property: left;
+          transition-property: left;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+  background: white;
+}
+body .swanky_title__social a .slide .arrow {
+  position: absolute;
+  right: 31px;
+  top: 24px;
+  opacity: 0;
+  -webkit-transform: skew(-20deg);
+      -ms-transform: skew(-20deg);
+          transform: skew(-20deg);
+}
+body .swanky_title__social a .slide .arrow .stem {
+  width: 10px;
+  height: 2px;
+  background: #858490;
+}
+body .swanky_title__social a .slide .arrow .point {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #858490;
+  top: -3px;
+  right: 1px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top: 2px solid #858490;
+}
+body .swanky_title__social a img {
+  width: 16px;
+  margin-left: 10px;
+  position: relative;
+  margin-right: 8px;
+  -webkit-transition-property: margin-left;
+          transition-property: margin-left;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+  margin-top: 10px;
+  top: 4px;
+}
+body .swanky_title__social a:hover > .slide {
+  left: -70px;
+  -webkit-transition-property: left;
+          transition-property: left;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+}
+body .swanky_title__social a:hover > img {
+  margin-left: 40px;
+  -webkit-transition-property: margin-left;
+          transition-property: margin-left;
+  -webkit-transition-duration: .1s;
+          transition-duration: .1s;
+}
+body .swanky_title__social a:hover > .slide .arrow {
+  right: 11px;
+  opacity: 1;
+  -webkit-transition-property: right,opacity;
+          transition-property: right,opacity;
+  -webkit-transition-delay: .07s;
+          transition-delay: .07s;
+  -webkit-transition-duration: .2s;
+          transition-duration: .2s;
+}
+body .swanky .intro {
+  float: right;
+  color: white;
+  width: 370px;
+  top: 50px;
+  position: relative;
+}
+body .swanky .intro h1 {
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.26);
+}
+body .swanky .intro p {
+  line-height: 20px;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.26);
+}
+body .swanky_wrapper {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #2a394f;
+}
+body .swanky_wrapper label {
+  padding: 25px;
+  float: left;
+  height: 72px;
+  border-bottom: 1px solid #293649;
+  position: relative;
+  width: 100%;
+  color: #eff4fa;
+  -webkit-transition: text-indent .15s, height .3s;
+          transition: text-indent .15s, height .3s;
+  box-sizing: border-box;
+}
+    
+
+body .swanky_wrapper label span {
+  position: relative;
+  top: -3px;
+}
+body .swanky_wrapper label:hover {
+  background: #212e41;
+  border-bottom: 1px solid #2A394F;
+  text-indent: 4px;
+}
+body .swanky_wrapper label:hover .bar {
+  width: 100%;
+}
+body .swanky_wrapper label .bar {
+  width: 0px;
+  -webkit-transition: width .15s;
+          transition: width .15s;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background: #355789;
+  bottom: 0;
+  left: 0;
+        background-color: aqua;
+}
+body .swanky_wrapper label .lil_arrow {
+  width: 5px;
+  height: 5px;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  float: right;
+  position: relative;
+  top: 6px;
+  right: 2px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+body .swanky_wrapper__content {
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+    
+}
+body .swanky_wrapper__content li {
+  width: 100%;
+  opacity: 0;
+  left: -100%;
+
+  background: #15a4fa;
+  padding: 25px 0px;
+  text-indent: 25px;
+  box-shadow: 0px 0px #126CA1  inset;
+  -webkit-transition: box-shadow .3s,text-indent .3s;
+          transition: box-shadow .3s,text-indent .3s;
+  position: relative;
+}
+body .swanky_wrapper__content li:hover {
+  background: #0c93e4;
+  box-shadow: 3px 0px #126CA1  inset;
+  -webkit-transition: box-shadow .3s linear,text-indent .3s linear;
+          transition: box-shadow .3s linear,text-indent .3s linear;
+  text-indent: 31px;
+}
+body .swanky_wrapper__content .clear {
+  clear: both;
+}
+
+input[type='checkbox']:checked + label .swanky_wrapper__content {
+  display: block;
+  top: 68px;
+  border-bottom: 1px solid #212e41;
+}
+
+input[type="checkbox"]:checked + label > .lil_arrow {
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  border-top: 2px solid #14a3f9;
+  border-right: 2px solid #14a3f9;
+}
+
+input[type='checkbox']:checked + label {
+  height: 325px;
+  background: #212e41;
+  text-indent: 4px;
+  -webkit-transition-property: height;
+          transition-property: height;
+  -webkit-transition-duration: .6s;
+          transition-duration: .6s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input[type='checkbox']:checked + label .bar {
+  width: 0;
+}
+
+input[type='checkbox']:checked + label li:nth-of-type(1) {
+  -webkit-animation: in 0.15s 0.575s forwards;
+          animation: in 0.15s 0.575s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.575s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type='checkbox']:checked + label li:nth-of-type(2) {
+  -webkit-animation: in 0.15s 0.7s forwards;
+          animation: in 0.15s 0.7s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.7s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type='checkbox']:checked + label li:nth-of-type(3) {
+  -webkit-animation: in 0.15s 0.825s forwards;
+          animation: in 0.15s 0.825s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.825s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type='checkbox']:checked + label li:nth-of-type(4) {
+  -webkit-animation: in 0.15s 0.95s forwards;
+          animation: in 0.15s 0.95s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.95s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+@-webkit-keyframes in {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes in {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+.love {
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 12px;
+  font-weight: strong;
+}
+.love p {
+  color: white;
+  font-weight: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+.love a {
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+.love img {
+  position: relative;
+  top: 3px;
+  margin: 0px 4px;
+  width: 10px;
+}
+
+.brand {
+  position: absolute;
+  left: 20px;
+  bottom: 14px;
+}
+.brand img {
+  width: 30px;
+}
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+    .box
+        {
+            width: 100px;
+            height: 70px;
+            text-align: center;
+            
+        }
+        .box a 
+        {
+           text-decoration: none;
+            color: white;
+        }
+       
+        .box p
+        {
+             text-decoration:none;
+            color: white;
+        }
+        .box span 
+        {
+            color: white;
+        }
+        
+        
+       #tab 
+        {
+            color: white;
+        }
+        
+        
+        .ww
+        {
+            background-color: black;
+            height: 200px;
+            padding-top: 10px;
+            
+        }
+        .ww img
+        {
+            margin-left: 30px;
+        }
+        
+        
+        
+        form {
+                width:500px;
+                margin:50px auto;
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border-bottom-color: white; 
+               // border:0px solid #dbdbdb;
+                color: white;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+                height: 38px;
+    margin-left: 5px;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300); // Roboto
+
+// Variables
+
+$default-font:'Roboto', sans-serif; // Roboto Google font
+$global-font-size:12px; // Global font sizing
+$global-font-weight:500; // Global font weight
+$global-font-smoothing:antialiased; // Global smoothing method
+$content-width:700px; // Width of wrapper
+$background:linear-gradient(135deg, #8254EA 0%, #E86DEC 100%); // Body background
+$full-height: 100vh; // Height of body
+
+$title-width:400px; // Width of title block
+
+// Reset
+
+ul{padding:0;margin:0;}li{list-style-type:none;}input[type='checkbox']{display:none;}label{cursor:pointer}::-webkit-scrollbar {display: none; }
+
+// Placeholders
+
+%center{
+     margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+// Styles
+
+body{
+  height: $full-height;
+  font-weight: $global-font-weight;
+  font-family:$default-font;
+  background:$background;
+  -webkit-font-smoothing: $global-font-smoothing;
+  font-size: $global-font-size;
+  .swanky{
+    @extend %center;
+    perspective:600px;
+    width:$content-width;
+    position:absolute;
+    margin:auto;
+    height:360px;
+    &_title{
+      float:right;
+      text-align:left;
+      width:$title-width;
+      color:white;
+      position:relative;
+      top:70px;
+      &__social a{
+        position:relative;
+        overflow:hidden;
+        .slide{
+          height: 45px;
+          width: 100px;
+          float: left;
+          position: absolute;
+          transform: skew(20deg);
+          left: -120px;
+          transition-property:left;
+          transition-duration:.2s;
+          background: white;
+          .arrow{
+            position: absolute;
+            right: 31px;
+            top: 24px;
+            opacity:0;
+            transform: skew(-20deg);
+            .stem{
+              width: 10px;
+              height: 2px;
+              background: rgb(133, 132, 144);
+            }
+            .point{
+              width: 6px;
+              height: 6px;
+              border-right: 2px solid rgb(133, 132, 144);
+              top: -3px;
+              right: 1px;
+              position: absolute;
+              transform: rotate(45deg);
+              border-top: 2px solid rgb(133, 132, 144);
+            }
+          }
+        }
+        width: 140px;
+        margin-right: 15px;
+        text-decoration:none;
+        padding: 0px 0px 5px 0px;
+        height: 40px;
+        border: 2px solid white;
+        float: left;
+        color: white;
+        font-size: 12px;
+        font-weight: 400;
+        margin-top:20px;
+        img{
+          width: 16px;
+          margin-left: 10px;
+          position: relative;
+          margin-right: 8px;
+          transition-property:margin-left;
+          transition-duration:.1s;
+          margin-top: 10px;
+          top: 4px;
+        }
+        &:hover > .slide{
+          left:-70px;
+          transition-property:left;
+          transition-duration:.1s;
+        }
+        &:hover > img{
+          margin-left:40px;
+          transition-property:margin-left;
+          transition-duration:.1s;
+        }
+        &:hover > .slide .arrow{
+          right:11px;
+          opacity:1;
+          transition-property:right,opacity;
+          transition-delay:.07s;
+          transition-duration:.2s;
+        }
+      }
+    }
+    .intro{
+      float:right;
+      color:white;
+      width:370px;
+      top:50px;
+      position:relative;
+      h1{
+        text-shadow: 0px 2px rgba(0, 0, 0, 0.26);
+      }
+      p{
+        line-height:20px;
+        text-shadow: 0px 1px rgba(0, 0, 0, 0.26);
+      }
+    }
+    &_wrapper{
+      width: 225px;
+      //transform: rotateY(14deg) rotateX(-2deg) rotateZ(-2deg);
+      height: auto;
+      overflow: hidden;
+      border-radius: 4px;
+      background: #2a394f;
+      label{
+        padding:25px;
+        float:left;
+        height:72px;
+        border-bottom: 1px solid #293649;
+        position:relative;
+        width:100%;
+        color:rgb(239, 244, 250);
+        transition:text-indent .15s, height .3s;
+        box-sizing:border-box;
+        img{
+          margin-right:10px;
+          position:relative;
+          top: 2px;
+          width:16px;
+        }
+        span{
+          position :relative;
+          top:-3px
+        }
+        &:hover{
+          background: rgb(33, 46, 65);
+          border-bottom: 1px solid #2A394F;
+          text-indent:4px;
+        }
+        &:hover .bar{
+          width:100%;
+        }
+        .bar{
+          width: 0px;
+          transition:width .15s;
+          height: 2px;
+          position: absolute;
+          display: block;
+          background: rgb(53, 87, 137);
+          bottom: 0;
+          left: 0;
+        }
+        .lil_arrow{
+          width:5px;
+          height:5px;
+          -webkit-transition: transform 0.8s;
+          transition: transform 0.8s;
+          -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          border-top:2px solid white;
+          border-right:2px solid white;
+          float:right;
+          position:relative;
+          top: 6px;
+          right: 2px;
+          transform:rotate(45deg)
+        }
+      }
+      &__content{
+        position: absolute;
+        display: none;
+        overflow: hidden;
+        left: 0;
+        width: 100%;
+        li{
+          width:100%;
+          opacity:0;
+          left:-100%;
+          background: #15a4fa;
+          padding:25px 0px;
+          text-indent:25px;
+          box-shadow: 0px 0px #126CA1  inset;
+            transition:box-shadow .3s,text-indent .3s;
+          position:relative;
+          &:hover{
+            background:#0c93e4;
+            box-shadow: 3px 0px #126CA1  inset;
+            transition:box-shadow .3s linear,text-indent .3s linear;
+            text-indent:31px;
+
+          }
+        }
+        .clear{
+          clear:both;
+        }
+      }
+    }
+  }
+}
+
+// Hide show content
+
+input[type='checkbox']:checked + label .swanky_wrapper__content{
+  display: block;
+  top: 68px;
+  border-bottom: 1px solid rgb(33, 46, 65);
+}
+input[type="checkbox"]:checked + label > .lil_arrow {
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  border-top: 2px solid rgb(20, 163, 249);
+  border-right: 2px solid rgb(20, 163, 249);
+}
+input[type='checkbox']:checked + label{
+  height: 325px;background: #212e41;
+  text-indent:4px;
+  transition-property:height;
+  transition-duration:.6s; -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type='checkbox']:checked + label .bar{
+  width:0;
+}
+
+input[type='checkbox']:checked + label{
+  @for $i from 1 through 4{
+    li:nth-of-type(#{$i}){
+      animation:in .15s .45s + $i/8 forwards;
+      -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      -moz-animation:in .15s .45s + $i/8 forwards;
+      -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+  } 
+}
+
+// Animations
+
+@keyframes in{
+  from{left:-100%;opacity:0}
+  to{left:0;opacity:1}
+}
+
+// My Styles
+
+.love{
+  position: absolute;
+  right: 20px;
+  bottom: 0px;
+  font-size: 11px;
+  font-weight: normal;
+  p{
+    color:white;
+    font-weight:normal;
+    font-family: 'Open Sans', sans-serif;
+  }
+  a{
+    color:white;
+    font-weight:700;
+    text-decoration:none;
+  }
+  img{
+    position:relative;
+    top:3px;
+    margin:0px 4px;
+    width:10px;
+  }
+}
+.brand{
+  position:absolute;
+  left:20px;
+  bottom:14px;
+  img{
+    width:30px;
+  }
+}
+
+.navbar-static-top {
+  margin-bottom:20px;
+}
+
+i {
+  font-size:16px;
+}
+
+.nav > li > a {
+  color:#787878;
+}
+  
+footer {
+  margin-top:20px;
+  padding-top:20px;
+  padding-bottom:20px;
+  background-color:#efefef;
+}
+
+/* count indicator near icons */
+.nav>li .count {
+  position: absolute;
+  bottom: 12px;
+  right: 6px;
+  font-size: 9px;
+  background-color: black;
+  color: rgba(255,255,255,0.9);
+  line-height: 1em;
+  padding: 2px 4px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.change-color{
+
+
+  background-color: #f5f5f5;
+  margin-right: -15px;
+  margin-bottom: 20px;
+  margin-left: -15px;
+
+
+
+}
+
+</style>
+
+
+
+
+</head>
+<body style="font-family:Verdana;background-color:#C0C0C0;" >
+
+<body style="background-color: silver" style ="overflow-x:scroll">
+ <div class="ww" width="100%"> 
+            <table>
+                <tr>
+                    <td width="20%">
+                        <img src="vs.jpg" width="170px" height="150px">
+                        </td>
+                    <td id="search" width="30%">
+                        
+                       <form >
+                                <input size="30" class="search" type="text" placeholder="Search..." required>
+                                <input class="button" type="button" value="Search">
+                        </form>
+                        </td>
+                        <td width="60%">
+                            <table id="tab" width="100%">
+                                <tr>
+                                    <td>
+                                         <a href="#" style="text-decoration:none">
+                                        <div style="background-color:#4682B4" class="box"><br> <span class="glyphicon glyphicon-user"></span><br>
+                                            <p>Home</p></div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a  href="profile.html" style="text-decoration:none;">
+                                         <div style="background-color:#DC143C" class="box"><br><span class="glyphicon glyphicon-user"></span>
+                                             <br>
+                                             <p>Profile</p></div>
+                                            </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" style="text-decoration:none">
+                                         <div style="background-color:#9400D3" class="box"><br><span class="glyphicon glyphicon-envelope"></span>
+                                             <br><p>Messages</p></div>
+                                            </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" style="text-decoration:none">
+                                         <div style="background-color:#2E8B57" class="box"><br><span class="glyphicon glyphicon-bell"></span>
+                            <br><p>Notification</p></div>
+                                            </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" style="text-decoration:none">
+                                         <div style="background-color:#C3690F" class="box"><br> <span class="glyphicon glyphicon-lock"></span>
+                            <br><p>Logout</p></div>
+                                            </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                </tr>
+            </table>
+        </div>
+
+
+
+  <div class="container">
+<div class="row" style="padding-top:40px;">
+   
+   <div class="col-sm-3">
+     
+        
+       
+       
+       
+       
+       <h4><b><u>Category</u></b></h4>
+        <div class='swanky'>
+  <!-- /////////// Begin Dropdown //////////// -->
+            
+  <div class='swanky_wrapper'>
+    <input id='Dashboard' name='radio' type='checkbox'>
+    <label style="background-color: #4682B4" for='Dashboard'>
+
+      <span>Social</span>
+      <div class='lil_arrow'></div>
+      <div class='bar'></div>
+      <div class='swanky_wrapper__content'>
+        <ul>
+          <li>Relationships</li>
+          <li>Marriage</li>
+            <a href="subcategory.html">  <li>Friendship</li></a>
+          <li>Family</li>
+             <li>Public Fear</li>
+          <li>Introvert</li>
+        </ul>
+      </div>
+    </label>
+    <input id='Sales' name='radio' type='checkbox'>
+    <label style="background-color: #DC143C" for='Sales'>
+      <span>Psychological</span>
+      <div class='lil_arrow'></div>
+      <div class='bar'></div>
+      <div class='swanky_wrapper__content'>
+        <ul>
+          <li>Jealousy</li>
+          <li>Depression</li>
+          <li>Phobias</li>
+          <li>Stage Fright</li>
+        </ul>
+      </div>
+    </label>
+    <input id='Messages' name='radio' type='checkbox'>
+    <label style="background-color: #9400D3" for='Messages'>
+      <span>Addiction</span>
+      <div class='lil_arrow'></div>
+      <div class='bar'></div>
+      <div class='swanky_wrapper__content'>
+        <ul>
+          <li>Smoking</li>
+          <li>Drug</li>
+          <li>Alcohol</li>
+          <li>Selfie</li>
+        </ul>
+      </div>
+    </label>
+    <input id='Users' name='radio' type='checkbox'>
+    <label style="background-color: #2E8B57" for='Users'>
+      <span>Physical</span>
+      <div class='lil_arrow'></div>
+      <div class='bar'></div>
+      <div class='swanky_wrapper__content'>
+        <ul>
+           <li>Sports</li>
+          <li>Exercise</li>
+          <li>Disability</li>
+          <li>Physical Diseas</li>
+        </ul>
+      </div>
+    </label>
+    <input id='Settings' name='radio' type='checkbox'>
+    <label style="background-color: #C3690F;"  for='Settings'>
+      <span>Others</span>
+    </label>
+  </div>
+</div>    
+       
+       
+       
+       
+       
+
+
+</div>
+    
+ <div class="col-sm-6">
+<H4><u><b>Updates:</u></b></H4>
+
+
+
+
+<h5>Addiction Problems:</h5>
+<div class="jumbotron" style='background-color:seagreen'>
+Recognizing an addiction problem can be harder than it seems. Addicts are often skilled at hiding their behavior, even from their closest friends and family members. Also, what may seem like an addiction could be an.....
+</div>
+
+
+<h5>Physical Problems:</h5>
+<div class="jumbotron" style='background-color:#9400D3'>
+Living with or experiencing a chronic illness can result in many adjustments and changes, such as loss of independence and not being able to do all the active things you used to do or usually enjoy. Anxiety and depression are common in people with chronic physical  ......
+</div>
+<h5>Psychological Problems:</h5>
+<div class="jumbotron" style='background-color:#DC143C'>
+It's not unusual for mental health problems, especially depression and anxiety, to occur with long-term (chronic) diseases. For example, you may:
+<br> Have diabetes and also feel very sad.
+ <br>Be depressed and notice that your physical health is getting worse. Perhaps your blood pressure is going up.
+<br> Have asthma, feel very anxious, and sometimes have panic attacks.
+</div>
+<h5>Social Problems:</h5>
+<div class="jumbotron" style='background-color:#4682B4'>
+A social problem is a condition that at least some people in a community view as being undesirable. Everyone would agree about some social problems, such ...
+</div>
+
+
+<h5>Other Problems:</h5>
+<div class="jumbotron" style='background-color:#C3690F'>
+All across the world, people are facing a wealth of new and challenging environmental problems everyday. Here are 15 major current environmental problems ...
+
+</div>
+
+
+</div>
+
+
+            
+    <div class="col-md-3">
+          <div class="panel panel-primary">
+            <div class="panel-heading" style='background-color:black'>
+               Online Users
+            </div>
+            <div class="panel-body" style ='background-color:#C0C0C0'>
+                <ul class="media-list">
+
+                                    <li class="media">
+
+                                        <div class="media-body" style ='background-color:#C0C0C0'>
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="assets/img/user.png" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Alex Deo | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+     <li class="media">
+
+                                        <div class="media-body" style ='background-color:#C0C0C0'>
+
+                                            <div class="media">
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="assets/img/user.gif" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Jhon Rexa | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                    <li class="media" style ='background-color:#C0C0C0'>
+
+                                        <div class="media-body" style ='background-color:#C0C0C0'>
+
+                                            <div class="media" style ='background-color:#C0C0C0'>
+                                                <a class="pull-left" href="#">
+                                                    <img class="media-object img-circle" style="max-height:40px;" src="assets/img/user.png" />
+                                                </a>
+                                                <div class="media-body" >
+                                                    <h5>Alex Deo | User </h5>
+                                                    
+                                                   <small class="text-muted">Active From 3 hours</small>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                    
+                </div>
+            </div>
+        
+    </div>
+
+
+                    
+             
+        
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,310 @@
+﻿<html>
+    <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    
+    
+    
+  <title>Edit Profile</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+ 
+    <style>
+        
+        .box
+        {
+            width: 100px;
+            height: 70px;
+            text-align: center;
+            
+        }
+        .box a 
+        {
+           text-decoration: none;
+            color: white;
+        }
+       
+        .box p
+        {
+             text-decoration:none;
+            color: white;
+        }
+        .box span 
+        {
+            color: white;
+        }
+        
+        
+       #tab 
+        {
+            color: white;
+        }
+        
+        
+        .ww
+        {
+            background-color: black;
+            height: 200px;
+            padding-top: 10px;
+            
+        }
+        .ww img
+        {
+            margin-left: 30px;
+        }
+        
+        
+        
+        form {
+                width:500px;
+                margin:50px auto;
+}
+.search {
+                padding:8px 15px;
+                background:rgba(50, 50, 50, 0.2);
+                border-bottom-color: white; 
+               // border:0px solid #dbdbdb;
+                color: white;
+}
+.button {
+                position:relative;
+                padding:6px 15px;
+                left:-8px;
+                border:2px solid #207cca;
+                background-color:#207cca;
+                color:#fafafa;
+                height: 38px;
+    margin-left: 5px;
+}
+.button:hover  {
+                background-color:#fafafa;
+                color:#207cca;
+}
+        
+      
+        
+        
+    </style>
+    
+    </head>
+    <body style="background-color:silver">
+        
+        <div class="ww" width="100%"> 
+            <table>
+                <tr>
+                    <td width="20%">
+                        <img src="vs.jpg" width="170px" height="150px">
+                        </td>
+                    <td id="search" width="30%">
+                        
+                       <form >
+                                <input size="30" class="search" type="text" placeholder="Search..." required>
+                                <input class="button" type="button" value="Search">
+                        </form>
+                        </td>
+                        <td width="60%">
+                            <table id="tab" width="100%">
+                                <tr>
+                                    <td>
+                                         <a href="Homepage.html" style="text-decoration:none">
+                                        <div style="background-color:#4682B4" class="box"><br> <span class="glyphicon glyphicon-user"></span><br>
+                                            <p>Home</p></div>
+                                        </a>
+                                    </td>
+                                    <td>
+                                        <a  href="profile.html" style="text-decoration:none;">
+                                         <div style="background-color:#DC143C" class="box"><br><span class="glyphicon glyphicon-user"></span>
+                                             <br>
+                                             <p>Profile</p></div>
+                                            </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" style="text-decoration:none">
+                                         <div style="background-color:#9400D3" class="box"><br><span class="glyphicon glyphicon-envelope"></span>
+                                             <br><p>Messages</p></div>
+                                            </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" style="text-decoration:none">
+                                         <div style="background-color:#2E8B57" class="box"><br><span class="glyphicon glyphicon-bell"></span>
+                            <br><p>Notification</p></div>
+                                            </a>
+                                    </td>
+                                    <td>
+                                        <a href="#" style="text-decoration:none">
+                                         <div style="background-color:#C3690F" class="box"><br> <span class="glyphicon glyphicon-lock"></span>
+                            <br><p>Logout</p></div>
+                                            </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <div class="container">
+            
+            
+            
+            
+            
+            
+    <h1>Edit Profile</h1>
+  	<hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="black.jpg" class="img-circle" alt="avatar" width="140" height="140">
+          <h6>Upload a different photo...</h6>
+          
+          <input type="file" class="form-control">
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+           Please <strong>edit</strong> the information.
+        </div>
+        <h3>Personal info</h3>
+        
+        <form class="form-horizontal" role="form" action="profile.html" method="get">
+          <div class="form-group">
+            <label class="col-lg-3 control-label">First name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Allah">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Last name:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="Ditta">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Gender:</label>
+            <div class="col-lg-8">
+              <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+    Male
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Male</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Female</a></li>
+    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Not Applicable</a></li>
+    
+  </ul>
+</div>
+            </div>
+          </div>
+            
+            <div class="form-group">
+            <label class="col-lg-3 control-label">Date Of Birth:</label>
+            <div class="col-lg-8">
+              <div class="col-lg-10">
+              <div class="row">
+                 <div class="col-lg-3">
+                  <input type="text" id="txt_month" name="txt_month" class="form-control input-sm"  placeholder="1" required maxlength="2" data-validation-required-message="Month is required" >
+                 </div>
+                  <div class="col-lg-3">
+                   <input type="text" id="txt_day" name="txt_day" class="form-control input-sm"  placeholder="1" required maxlength="2" data-validation-required-message="Day is required" >
+                 </div>
+                  <div class="col-lg-4">
+                   <input type="text" id="txt_year" name="txt_year"  class="form-control input-sm"  placeholder="2001" required maxlength="4" data-validation-required-message="Year is required" >
+                 </div>
+
+              </div>
+
+           <p class="help-block"></p>
+           </div>
+            </div>
+          </div>
+            
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Email:</label>
+            <div class="col-lg-8">
+              <input class="form-control" type="text" value="janesemail@gmail.com">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-lg-3 control-label">Time Zone:</label>
+            <div class="col-lg-8">
+              <div class="ui-select">
+                <select id="user_time_zone" class="form-control">
+                  <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                  <option value="Alaska">(GMT-09:00) Alaska</option>
+                  <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                  <option value="Arizona">(GMT-07:00) Arizona</option>
+                  <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                  <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                  <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                  <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Username:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="text" value="AllahDitta">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label">Confirm password:</label>
+            <div class="col-md-8">
+              <input class="form-control" type="password" value="11111122333">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-3 control-label"></label>
+            <div class="col-md-8">
+                
+                
+                    <button type="submit" class="btn btn-primary" value="Save Changes" >
+                        Save Changes
+                    </button>
+                
+              <span></span>
+              <button type="reset" class="btn btn-default" value="Cancel" onclick="window.location.href='profile.html'">
+                  Cancel
+                </button>  
+            </div>
+          </div>
+        </form>
+      </div>
+  </div>
+</div>
+<hr>
+    
+    
+    </body>
+</html>
